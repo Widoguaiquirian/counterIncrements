@@ -1,0 +1,108 @@
+/* Created XX April XXXX
+Last update April XX:  */
+
+:root {
+  --zI-1: 1;
+  --zI-2: 2;
+  --zI-3: 3;
+  --zI-4: 4;
+  --zI-5: 5;
+
+  /* --z-nav: var(--zI-2); 100 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--- General ---*/
+
+html {
+  font-size: 62.5%;
+  background: linear-gradient(rgb(82, 12, 77), rgba(255, 192, 203, 0.406));
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  line-height: 1.6;
+  color: white;
+  height: 100vh;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  font-size: 1.6rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+.container-main {
+  display: flex;
+  margin: 4rem auto 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fab {
+  font-size: 5rem;
+}
+
+.counter {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.counter-container span {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container-main {
+    max-width: 95%;
+  }
+
+  .counter-container {
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .counter {
+    font-size: 1.8rem;
+  }
+
+  .fab {
+    font-size: 2.5rem;
+  }
+
+  .counter-container span {
+    font-size: 1rem;
+  }
+}
